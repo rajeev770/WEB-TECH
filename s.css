@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navigation_bar{
+    background-image: linear-gradient(to left,#ede8eb,#a2cae8,#7dbae8,#4781ad);
+}
+.navmenu{
+    color: black;
+    font-size:20px;
+    font-weight: bolder;
+    transition-duration: 0.5s;
+
+}
+.navmenu:hover {
+    color: ghostwhite;
+    transition-duration: 1s;
+}
+.myname{
+    font-size: 30px;
+    font-family: Arial Black;
+    color: #1d0f33;
+    text-shadow: 0px 0px 3px white;
+}
