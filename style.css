@@ -5,6 +5,10 @@
 }
 .navigation_bar{
     background-image: linear-gradient(to RIGHT,#ede8eb,#a2cae8,#7dbae8,#4781ad);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
 }
 .navmenu{
     color: black;
@@ -22,14 +26,15 @@
     font-family: Arial Black;
     color: #5a2c73 /*PURPLE*/;
     text-shadow: 0px 0px 3px white;
+    font-variant: small-caps;
 }
 .sect
 {
-/*  border: 2px solid black;*/
+  border: 2px solid black; /*this gives border between the section*/ 
     height: 500px;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
 }
 .sect div
 {
@@ -39,9 +44,9 @@ html{
     scroll-behavior: smooth;
 }
 .home{
+    height: 400px;
     margin-top: 100px;
     background-color: LIGHTblue;/*THIS IS ADDED HERE  */ 
-    height: 400px;
 }
 .homename{
     font-size: 80px;
@@ -52,11 +57,14 @@ html{
     color: orangered;/* CAREER OBJECTIVE AND NAME */
     font-variant: small-caps;
     font-weight: bolder;
+    text-shadow: 0px 0px 3px black;
 }
 .home div
 {
     font-weight: bolder;
 }
+
+/*ABOUT SECTION  */
 .about{
     background-color: #dae0da;
     height: 400px;
@@ -68,24 +76,58 @@ html{
 .cobj
 {
     font-size: 35px;
-    font-family: Georgia, serif;
+    font-family: Georgia;  /*  CHANGING FONT OF THE PARAGRAPH IN ABOUT*/
     text-align: justify;
     text-indent: 20%;
     color: black;
 }
-.section_head
+.section_head   /* about head  */
 {
     font-size: 50px;
     color: #043287;
+    text-align: justify;
+    text-indent: 20%;
     font-variant: small-caps;
     font-family: Arial Black;
 }
 .myimg{
     transition-duration: 1.5s;
+    border-radius: 50PX;
 }
 .myimg:hover
 {
     transform: scale(1.4);
     border-radius: 50px;
     box-shadow: 0px 0px 20px BLACK;
+}
+/*skills section starts here*/
+
+.skills{
+  background-color: lightgrey;
+}
+.skillset  td ul li{
+    margin-top: 35px;
+    font-weight: bolder;
+    font-size: 30px;
+    color: red;
+}
+.card-text
+{
+    font-size: 20px ;
+}
+.project_cards{
+    width: 90%;
+}
+.card{
+    transition-duration: 1s;
+}
+.card:hover{
+    box-shadow: 0 0 20px black;
+}
+.projects{
+    height: 600px;
+    background-image: linear-gradient(to RIGHT,#ddeff0) ;
+}
+.myicon{
+    border-radius: 20px;
 }

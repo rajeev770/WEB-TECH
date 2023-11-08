@@ -8,7 +8,9 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
   <!-- External CSS link below -->
-  <link rel="stylesheet" type="text/css" href="s.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- link from aos github -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Sanket Portfolio</title>
 </head>
 <body>
@@ -16,7 +18,7 @@
     <div class="navigation_bar">
         <!-- naviagtion code below -->
         <nav class="navbar navbar-expand-lg ">
-  <a class="navbar-brand" href="#"><span class="myname">SANKET <span><img src="https://cdn-icons-png.flaticon.com/512/1096/1096028.png" height="35px"> </span> </span></a>
+  <a class="navbar-brand" href="#"><span class="myname">Sanket <span><img class="myicon"src="https://upload.wikimedia.org/wikipedia/commons/8/81/Portfolio_.gif" height="30px"> </span> </span></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -48,7 +50,7 @@
         <div align="center">
             <span>Hello</span><br>
             <span>My name is </span><br>
-            <span class="myname homename">Sanket</span><br>
+            <div class="myname homename" data-aos="slide-up">Sanket Pote</div><br>
             <span>I am a <span id="designation">Full Stack Java Developer</span></span>
         </div>
     </div>
@@ -67,14 +69,80 @@
         </div>
     </div>
     <div class="skills sect" id="skills_sec">
-      <div>skills sections</div> 
+        <div class="skill_heading" align="center">
+          <h1 class="section_head" >Skills</h1>
+          <table  width="80%" height="300px" >
+              <tr class="skillset">
+                <td valign="top">
+                  <ul type="none">
+                    <li><img class="myicon" src="https://e7.pngegg.com/pngimages/509/412/png-clipart-microsoft-sql-server-microsoft-azure-sql-database-table-table-furniture-text-thumbnail.png" height="30px">  Oracle SQl</li>
+                    <li><img class="myicon" src="https://cdn0.iconfinder.com/data/icons/social-network-9/50/22-512.png" height="30px"> HTML</li>
+                    <li><img class="myicon" src="https://play-lh.googleusercontent.com/TxjQBGYHvMJsBX5dCvxQ4R-_4N-XrVhW6-p7D7TXanXKZMD8L-UkeMBWO1dtubGVNqU"  height = "30px">CSS</li>
+                    <li><img class="myicon" src="https://getbootstrap.com/docs/4.5/assets/img/bootstrap-icons.png " height="25px">Bootstrap </li>
+                    <li><img class="myicon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" height="30px">JavaScript</li>
+                  </ul>
+                </td>
+                <td valign="top">
+                  <ul type="none">
+                    <li><img class="myicon" src="https://www.freecodecamp.org/news/content/images/2021/06/Ekran-Resmi-2019-11-18-18.08.13.png" height ="25px">React JS</li>
+                  <li><img class="myicon" src=""><img src="https://png.pngtree.com/element_our/png/20181227/xml-vector-icon-png_287418.jpg" height="35px">XML</li>
+                  <li><img class="myicon" src="https://i0.wp.com/dbaontap.com/wp-content/uploads/2015/11/json-logo.png?fit=690%2C330&ssl=1"height ="30px">JSON</li>
+                  <li><img class="myicon" src="https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Logo-640x400.jpg"height="30px">MongoDB</li>
+                  </ul>
+                </td>
+              </tr>
+          </table>
+        </div>
     </div>
     <div class="projects sect" id="projects_sec">
-      <div>projects sections</div> 
+      <div class="project" align="center">
+        <h1  class="section_head" >Projects</h1>
+        <div class="project_cards">
+                              <div class="card-deck">
+              <div class="card" data-aos="slide-right">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNdOdhNeaP-T2n-FRDrF4tfARxJehebV54QQ&usqp=CAU" class="card-img-top" alt="..." height="300px">
+                <div class="card-body">
+                  <h5 class="card-title">FITNESS TRACKER</h5>
+                  <p class="card-text"> A fitness tracking application that allows users to log their workouts, set fitness goals, and track their progress over time.</p>
+                </div>
+              </div>
+              <div class="card" data-aos="slide-up">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVmZh_6gt0s6YG3n0IJZU4xS8KbytN2CvKAA&usqp=CAU" class="card-img-top" alt="..." height="300px">
+                <div class="card-body">
+                  <h5 class="card-title">ECOMMERCE </h5>
+                  <p class="card-text">It is an online marketplace where vendors can list their products, and users can browse, search, and purchase items.</p>
+                  
+                </div>
+              </div>
+              <div class="card" data-aos="slide-left">
+                <img src="https://wear-studio.com/wp-content/uploads/2022/05/vr-gaming-process.jpg" class="card-img-top" alt="..." height="300px" style="padding: 20px;">
+                <div class="card-body">
+                  <h5 class="card-title">AUGUMENTED REALITY (AR) GAME</h5>
+                  <p class="card-text">Developing an AR-based game where players can interact with virtual objects and characters in the real world.</p>
+                 
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- project cards ends here -->
+      </div> 
     </div>
     <div class="contact sect" id="contact_sec">
       <div>contact sections</div> 
     </div>
   </div>
+  <!-- aos script tag -->
+  <div>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+       duration:1500
+    });
+  </script>
+  </div>
 </body>
 </html>
+
+
+
+<!-- https://github.com/rajeev770/WEB-TECH/blob/main/images/new%20img1.png?raw=true" height="200px -->
