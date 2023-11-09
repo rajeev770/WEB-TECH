@@ -33,7 +33,7 @@
   border: 2px solid black; /*this gives border between the section*/ 
     height: 500px;
     /*display: flex;*/
-    /*justify-content: center;*/
+    justify-content: center;
     /*align-items: center;*/
 }
 .sect div
@@ -85,7 +85,7 @@ html{
 {
     font-size: 50px;
     color: #043287;
-    text-align: justify;
+    text-align: center;
     text-indent: 20%;
     font-variant: small-caps;
     font-family: Arial Black;
@@ -110,6 +110,8 @@ html{
     font-weight: bolder;
     font-size: 30px;
     color: red;
+    
+
 }
 .card-text
 {
@@ -130,4 +132,44 @@ html{
 }
 .myicon{
     border-radius: 20px;
+
+}
+.myinfo{
+    color: #2b4470;
+    font-size: 30px;
+}
+.details{
+    color: #434752;
+}
+.footer{
+    color: black;
+
+}
+.cnt_form{
+    padding: 15px;
+    font-size: 15px;
+    color: black;
+}
+.form-group{
+    font-size: 25px !important;
+    font-weight: bolder;
+}
+.contact{
+    background-color: #dae0da;
+}
+.footer{
+    background-color: grey;
+    height: 50px;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    background-image: linear-gradient(to RIGHT,#ede8eb,#a2cae8,#7dbae8,#4781ad);
+}
+.profile{
+    color: #012661;
+    text-decoration: underline;
+}
+#skill_sec{
+    text-align: justify;
 }
